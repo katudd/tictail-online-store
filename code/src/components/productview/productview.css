@@ -28,6 +28,7 @@
 .buttondiv {
   position: relative;
   width: 30%;
+  height: 50%;
   margin: auto;
   text-align: center;
 }
