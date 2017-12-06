@@ -1,0 +1,15 @@
+.outerbox {
+  max-width: 70%;
+  width: 70%; 
+  margin: auto;
+  text-align: center;
+
+}
+
+.image {
+  margin: auto;
+  width: 100%;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
+}
