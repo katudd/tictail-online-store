@@ -1,5 +1,6 @@
 import React from "react"
 import Products from "./products/products"
+import Productview from "./productview/productview"
 
 class App extends React.Component {
 
@@ -21,16 +22,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="products">
-          {this.state.products.map(item =>
-            <Products
-              key={item.id}
-              title={item.title}
-              image={item.images[0].url}
-              description={item.description}
-              price={item.price}
-              category={item.categories.title} />)}
-        </div>
+        <Products products={this.state.products} />
+        <Productview product={this.state.products[0]} />
       </div>
     )
   }
