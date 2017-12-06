@@ -10,7 +10,7 @@ class Product extends React.Component {
           {/* {this.props.description} */}
           {this.props.price}
         </div>
-        <img className="image-product" src={this.props.image} alt="name" />
+        <div className="image-product" style={{backgroundImage: `url(${this.props.image})`}} alt="name" />
       </div>
     )
   }

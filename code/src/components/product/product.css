@@ -2,12 +2,16 @@
   width: 48%;
   position: relative;
   margin: 1%;
-  /*display: flex;
-  justify-content: center;*/
+  display: flex;
+  justify-content: center;
 }
 
 .image-product {
+  /*margin: auto;*/
   width: 100%;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .product-overlay {
