@@ -10,6 +10,10 @@ class Productview extends React.Component {
       <div className="outerbox">
         <h1>{this.props.product.title}</h1>
           <div className="image" style={{backgroundImage: `url(${this.props.product.images[0].url})`}} />
+          <div className="description">{this.props.product.description}</div>
+          <div className="buttondiv">
+          <div className="button"> <button>BUY</button> </div>
+          </div>
         </div>
     )
   }
