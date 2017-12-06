@@ -1,0 +1,14 @@
+body {
+  width: 100%;
+  background-color: blue;
+}
+
+.products {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

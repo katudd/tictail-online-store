@@ -1,0 +1,21 @@
+.product-box {
+  width: 50%;
+  position: relative;
+}
+
+.image-product {
+  width: 100%;
+  height: auto;
+}
+
+.product-overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.product-box:hover .product-overlay {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease-in;
+}

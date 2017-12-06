@@ -21,7 +21,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="content">
         <Products products={this.state.products} />
         <Productview product={this.state.products[0]} />
       </div>
