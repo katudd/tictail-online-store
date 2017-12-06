@@ -7,7 +7,8 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      products: []
+      products: [],
+      // category: 'Watches'
     }
   }
 
@@ -19,10 +20,19 @@ class App extends React.Component {
       }))
   }
 
+  //Method to update selectd category
+  // setCategory(category) {
+  //   this.setState({
+  //     category
+  //   })
+  // }
+
   render() {
     return (
       <div className="content">
-        <Products products={this.state.products} />
+        <Products products={this.state.products}
+          // filter={this.state.category}
+        />
         <Productview product={this.state.products[0]} />
       </div>
     )

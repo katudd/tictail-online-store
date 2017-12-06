@@ -1,6 +1,5 @@
 body {
   width: 100%;
-  background-color: blue;
 }
 
 .products {
@@ -11,4 +10,5 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 1%;
 }
