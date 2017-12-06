@@ -26,7 +26,7 @@ class App extends React.Component {
             <Products
               key={item.id}
               title={item.title}
-              image={item.image}
+              image={item.images[0].url}
               description={item.description}
               price={item.price}
               category={item.categories.title} />)}

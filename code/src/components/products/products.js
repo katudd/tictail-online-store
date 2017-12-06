@@ -7,6 +7,7 @@ class Products extends React.Component {
         {this.props.title}
         {this.props.description}
         {this.props.price}
+        <img src={this.props.image} alt="name" />
       </div>
     )
   }
