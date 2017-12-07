@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      products: [],
+      products: []
       // category: 'Watches'
     }
   }
@@ -21,7 +21,7 @@ class App extends React.Component {
       }))
   }
 
-  //Method to update selectd category
+  // Method to update selectd category
   // setCategory(category) {
   //   this.setState({
   //     category
