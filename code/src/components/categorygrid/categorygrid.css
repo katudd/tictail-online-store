@@ -1,0 +1,14 @@
+.categories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  box-sizing: border-box;
+  background: red;
+  width: 32%;
+}
+
+h2 {
+  text-align: center;
+}
