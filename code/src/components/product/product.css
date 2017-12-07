@@ -1,0 +1,27 @@
+.product-box {
+  width: 48%;
+  position: relative;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-product {
+  width: 100%;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.product-box:hover .product-overlay {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease-in;
+
+}
