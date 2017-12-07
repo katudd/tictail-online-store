@@ -10,7 +10,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 33.5%;
   margin: 1% 1% 0 1%;
@@ -26,10 +26,13 @@
 
 .headingCategory {
   display: flex;
-  align-self: center;
-  text-align: center;
-  position: absolute;
+  position: fixed;
   font-family: Raisonne;
   padding: 5px 0 5px 0;
   margin: 0;
+  background-color: #ffffffa8;
+  width: 21.95%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
