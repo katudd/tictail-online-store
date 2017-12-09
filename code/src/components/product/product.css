@@ -17,11 +17,11 @@
   opacity: 0;
   visibility: hidden;
   position: absolute;
+  display: flex;
 }
 
 .product-box:hover .product-overlay {
   opacity: 1;
   visibility: visible;
   transition: opacity 300ms ease-in;
-
 }
