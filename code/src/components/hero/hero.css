@@ -1,0 +1,26 @@
+.herocontainer {
+  display: flex;
+  width: 68.5%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background: blue;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1% 1% 1%;
+}
+
+.herobutton {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Raisonne;
+  border-radius: 0;
+  padding: 5px;
+  background: white;
+}

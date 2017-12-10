@@ -37,16 +37,16 @@ body {
 
 @media (max-width: 600px){
   .content{
-    width: 94%;
-    margin-left: 3%;
-    margin-top: 3%;
+    width: 100%;
+    /*margin-left: 3%;*/
+    /*margin-top: 3%;*/
   }
 }
 
 @media (min-width:601px) and (max-width:900px){
   .content{
-    width: 79%;
-    margin-left: 18%;
+    width: 100%;
+    /*margin-left: 18%;*/
     margin-top: 50px;
   }
 
@@ -54,8 +54,8 @@ body {
 
 @media (min-width: 901px){
   .content{
-    width: 70%;
-    margin-left: 15%;
+    width: 100%;
+    /*margin-left: 15%;*/
     margin-top: 150px;
   }
   }

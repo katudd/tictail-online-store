@@ -4,6 +4,7 @@ import Productview from "./productview/productview"
 import Categorygrid from "./categorygrid/categorygrid"
 import Navigation from "./navigation/navigation"
 import Logo from "./logo/logo"
+import Hero from "./hero/hero"
 
 class App extends React.Component {
 
@@ -37,9 +38,10 @@ class App extends React.Component {
         <Navigation />
         {/* <Logo /> */}
 
-        {/* <div>
-          <Categorygrid /> */}
+        {/* <div> */}
         <div className="content">
+          <Hero />
+          <Categorygrid />
           <Products products={this.state.products}
             // filter={this.state.category}
           />
