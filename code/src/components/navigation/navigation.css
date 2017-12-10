@@ -8,24 +8,11 @@ font-family: sans-serif;
   box-sizing: border-box;
 }
 
-#menu a {
-  text-decoration: none;
-}
-
-.heroimage{
-  width: 100%;
-  height: 30%;
-  background-color: blue;
-}
-
-/*#menu{
-  font-family: Raisonne;
-  font-size: 1.5em;
-  line-height: 2em;
-}*/
-
 #menu{
   font-family: Raisonne;
+}
+#menu a {
+  text-decoration: none;
 }
 
 #menu ul {
@@ -59,7 +46,7 @@ nav a:hover {
   .mobile-menu{
     width: 100%;
     height: 60px;
-    /*background-color: lightblue;*/
+    background-color: lightblue;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -92,7 +79,7 @@ nav a:hover {
     transform: rotate(45deg) translate(-8px, -7px);
   }
 
-  .menu {
+  .mobile-menu-list {
     width:100%;
     padding-bottom: 15px;
     position: absolute;
@@ -100,6 +87,7 @@ nav a:hover {
     top: 60px;
     transition: all 0.3s ease-in-out;
     background-color: pink;
+    z-index: 50;
   }
 
   .hamburger-checkbox:checked ~ .menu{

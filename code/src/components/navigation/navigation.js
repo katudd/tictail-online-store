@@ -7,7 +7,6 @@ class Navigation extends React.Component {
 
       <nav id="menu">
 
-
         <div className="mobile-menu">
 
           <input id="hamburger" type="checkbox" className="hamburger-checkbox" />
@@ -20,7 +19,7 @@ class Navigation extends React.Component {
 
         </div>
 
-        <div className="menu">
+        <div className="mobile-menu-list">
 
           <ul>
             <li><a href="#">Home</a></li>
@@ -36,13 +35,6 @@ class Navigation extends React.Component {
           </ul>
 
         </div>
-
-        {/* <div className="content"> */}
-
-        {/* <div className="heroimage" /> */}
-
-        {/* </div> */}
-
       </nav>
 
     )
