@@ -1,0 +1,159 @@
+body{
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+#menu a {
+  text-decoration: none;
+}
+
+.heroimage{
+  width: 100%;
+  height: 30%;
+  background-color: blue;
+}
+
+/*#menu{
+  font-family: Raisonne;
+  font-size: 1.5em;
+  line-height: 2em;
+}*/
+
+#menu{
+  font-family: Raisonne;
+}
+
+#menu ul {
+  list-style-type: none;
+}
+
+nav a:hover {
+  color: #f0a773;
+}
+
+#menu .submenu{
+  position: absolute;
+  z-index: 100;
+}
+
+#menu input[type="checkbox"]{
+  display: none;
+}
+
+#menu input[type="checkbox"] + .sub-menu {
+  display: none;
+}
+
+#menu input[type="checkbox"]:checked + .sub-menu {
+  display: block;
+}
+
+@media (max-width: 600px){
+  /*start mobile hamburger */
+
+  .mobile-menu{
+    width: 100%;
+    height: 60px;
+    /*background-color: lightblue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .hamburger{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    padding: 15px 0 15px 10px;
+    margin-right: 20px;
+  }
+
+  .bar{
+    width: 30px;
+    height: 4px;
+    background-color: #828481;
+    margin: 6px 0;
+  }
+
+  .hamburger-checkbox:checked + .hamburger .bar1{
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .hamburger-checkbox:checked + .hamburger .bar2{
+  opacity: 0;
+  }
+
+  .hamburger-checkbox:checked + .hamburger .bar3{
+    transform: rotate(45deg) translate(-8px, -7px);
+  }
+
+  .menu {
+    width:100%;
+    padding-bottom: 15px;
+    position: absolute;
+    right: -100%;
+    top: 60px;
+    transition: all 0.3s ease-in-out;
+    background-color: pink;
+  }
+
+  .hamburger-checkbox:checked ~ .menu{
+  right: 0;
+  top: 60px;
+  }
+
+  .hamburger-checkbox {
+    display: none;
+  }
+
+  .mobile-menu ul{
+    text-align: center;
+    margin-right: 35px;
+    margin-left: 0px;
+  }
+
+  /*end mobile hamburger*/
+
+}
+
+@media (min-width:601px) and (max-width:900px){
+
+  #menu{
+    font-size: 1em;
+    line-height: 2em;
+    margin-left: -20px;
+  }
+
+  nav {
+    width: 18%;
+    height: 100%;
+    background-color: red;
+    display: inline-block;
+    position: fixed;
+    top:25;
+  }
+
+}
+
+@media (min-width: 901px){
+
+  #menu{
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+
+  nav {
+    width: 15%;
+    height: 100%;
+    /*background-color: red;*/
+    display: inline-block;
+    position: fixed;
+    top: 125;
+  }
+
+}

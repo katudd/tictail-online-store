@@ -2,6 +2,8 @@ import React from "react"
 import Products from "./products/products"
 import Productview from "./productview/productview"
 import Categorygrid from "./categorygrid/categorygrid"
+import Navigation from "./navigation/navigation"
+import Logo from "./logo/logo"
 
 class App extends React.Component {
 
@@ -32,13 +34,18 @@ class App extends React.Component {
     return (
 
       <div>
-        <Categorygrid />
+        <Navigation />
+        {/* <Logo /> */}
+
+        {/* <div>
+          <Categorygrid /> */}
         <div className="content">
           <Products products={this.state.products}
             // filter={this.state.category}
           />
-          <Productview product={this.state.products[0]} />
+          {/* <Productview product={this.state.products[0]} /> */}
         </div>
+        {/* </div> */}
       </div>
     )
   }
