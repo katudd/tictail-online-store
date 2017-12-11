@@ -1,10 +1,13 @@
+@font-face {
+  font-family: Raisonne;
+  src: url(/fonts/Raisonne_Demibold.otf);
+}
+
+
 .outerbox {
   max-width: 60%;
   width: 60%;
   margin: auto;
-  text-align: center;
-  position: relative;
-
 }
 
 .image {
@@ -13,29 +16,70 @@
   padding-top: 100%;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: -1;
+}
+
+.descriptioncontainer {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 400px;
+  right: 135px;
 }
 
 .description {
-  padding: 20px;
-  position: absolute;
-  width: 30%;
+  font-family: Raisonne;
+  padding: 30px;
+  padding-top: 60px;
+  width: 100%;
   background-color: white;
   border: 2px solid black;
-  bottom: 5%;
-  right: -20%;
+  position: relative;
+  /*bottom: 5%;*/
 }
 
 .buttondiv {
-  position: relative;
   width: 30%;
-  height: 50%;
-  margin: auto;
-  text-align: center;
+  top: -10%;
+  left: 100px;
+  position: absolute;
 }
 
 .button {
   border-radius: 50%;
-  position: absolute;
   bottom: 0;
   right: 0;
+  top: 100px;
+}
+
+#button:hover {
+  background-color: #50ba83;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  border: 2px solid black;
+}
+
+#button {
+  font-family: Raisonne;
+  background-color: #c693ac;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+#name {
+  font-family: Raisonne;
+  text-align: right;
+  z-index: 100;
+  position: absolute;
+  right: 225px;
+  top: 200px;
+}
+
+#center {
+  text-align: center;
 }
