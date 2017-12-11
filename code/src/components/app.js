@@ -39,16 +39,16 @@ class App extends React.Component {
         <Logo />
 
         <div>
-        <div className="content">
-          <Hero />
-          <Categorygrid />
-          <Products products={this.state.products}
+          <div className="content">
+            <Hero />
+            <Categorygrid />
+            <Products products={this.state.products}
             // filter={this.state.category}
           />
-          <Productview product={this.state.products[0]} />
+            <Productview product={this.state.products[0]} />
+          </div>
         </div>
-        // </div>
-      // </div>
+      </div>
     )
   }
 

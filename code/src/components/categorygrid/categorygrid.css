@@ -36,6 +36,8 @@
   margin-right: auto;
   text-align: center;
   top: 50%;
+  border-width: 1px;
+  border-color: #000;
 }
 
 @media (max-width: 600px){
