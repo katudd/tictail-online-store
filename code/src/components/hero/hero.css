@@ -29,6 +29,15 @@
   border: 2px solid black;
 }
 
+.herobutton a {
+  text-decoration: none;
+  color: black;
+}
+
+.herobutton a:hover {
+  color: #f0a773;
+}
+
 @media (max-width: 600px){
   .herobutton  {
     font-size: 1.2em;

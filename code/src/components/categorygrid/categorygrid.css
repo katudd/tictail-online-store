@@ -50,6 +50,10 @@
   font-size: 2vw;
 }
 
+.category a:hover {
+  color: #f0a773;
+}
+
 @media (max-width: 600px){
   .headingCategory  {
     font-size: 1.2em;
