@@ -15,25 +15,26 @@ class Navigation extends React.Component {
           <label className="hamburger" htmlFor="hamburger">
             <div className="bar bar1" />
             <div className="bar bar2" />
-            <div className="bar bar3" />
+            <div clasName="bar bar3" />
           </label>
 
-        </div>
+          <div className="menu">
 
-        <div className="mobile-menu-list">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products </a></li>
+              <li><a href="#">Products</a></li>
 
-          <ul>
-            <Link to="/"><li>Home</li></Link>
-            <Link to="/products"><li><label className="drop-icon" htmlFor="sm">Products</label></li></Link>
-            <input type="checkbox" id="sm" />
-            <ul className="sub-menu">
-              <Link to="/klockor"><li>Klockor</li></Link>
-              <Link to="/stolar"><li>Stolar</li></Link>
-              <Link to="/tavlor"><li>Tavlor</li></Link>
+              <input type="checkbox" id="sm" />
+              <ul className="sub-menu">
+                <li><a href="#">Klockor</a></li>
+                <li><a href="#">Stolar</a></li>
+                <li><a href="#">Tavlor</a></li>
+              </ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Newsletter</a></li>
             </ul>
-            <Link to="/about"><li>About</li></Link>
-            <Link to="/newsletter"><li>Newsletter</li></Link>
-          </ul>
+          </div>
         </div>
       </nav>
 

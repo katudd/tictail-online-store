@@ -8,20 +8,31 @@ font-family: sans-serif;
   box-sizing: border-box;
 }
 
-#menu{
-  font-family: Raisonne;
-}
-#menu a {
+a {
   text-decoration: none;
+}
+
+.heroimage{
+  width: 100%;
+  height: 30%;
+  background-color: blue;
 }
 
 #menu ul {
   list-style-type: none;
+  padding: 0;
 }
 
-nav a:hover {
-  color: #f0a773;
+#menu li {
+  /*display: inline;*/
+  font-size: 1.2em;
+  line-height: 2em;
 }
+
+#menu ul{
+  margin-left: 30px;
+}
+
 
 #menu .submenu{
   position: absolute;
@@ -32,6 +43,7 @@ nav a:hover {
   display: none;
 }
 
+
 #menu input[type="checkbox"] + .sub-menu {
   display: none;
 }
@@ -40,7 +52,35 @@ nav a:hover {
   display: block;
 }
 
+nav a:hover {
+  color: green;
+}
+
+
 @media (max-width: 600px){
+
+  .logo{
+    width: 80px;
+    height: 30px;
+    position: fixed;
+    top: 10;
+    left: 15;
+  }
+
+  .symbol{
+    display: none;
+  }
+
+  .container{
+    width: 94%;
+    height: 2000px;
+    background-color: yellow;
+    margin-left: 3%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
   /*start mobile hamburger */
 
   .mobile-menu{
@@ -79,7 +119,8 @@ nav a:hover {
     transform: rotate(45deg) translate(-8px, -7px);
   }
 
-  .mobile-menu-list {
+
+  .menu {
     width:100%;
     padding-bottom: 15px;
     position: absolute;
@@ -87,7 +128,7 @@ nav a:hover {
     top: 60px;
     transition: all 0.3s ease-in-out;
     background-color: pink;
-    z-index: 50;
+    z-index: 200;
   }
 
   .hamburger-checkbox:checked ~ .menu{
@@ -111,10 +152,28 @@ nav a:hover {
 
 @media (min-width:601px) and (max-width:900px){
 
-  #menu{
-    font-size: 1em;
-    line-height: 2em;
-    margin-left: -20px;
+  .logo{
+    width: 170px;
+    height: auto;
+    position: fixed;
+    top: 10;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .symbol{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: fixed;
+    top: 30;
+    right: 0;
+    background-color: pink;
+  }
+
+  .symbol img{
+    width: 60%;
+    height: auto;
   }
 
   nav {
@@ -126,22 +185,57 @@ nav a:hover {
     top:25;
   }
 
+  .container{
+    width: 79%;
+    height: 2000px;
+    background-color: yellow;
+    margin-left: 18%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media (min-width: 901px){
 
-  #menu{
-    font-size: 1.5em;
-    line-height: 2em;
+  .logo{
+    width: 320px;
+    height: auto;
+    position: fixed;
+    top: 10;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   nav {
     width: 15%;
     height: 100%;
-    /*background-color: red;*/
+    background-color: red;
     display: inline-block;
     position: fixed;
     top: 125;
+  }
+
+  .container{
+    width: 70%;
+    height: 2000px;
+    background-color: yellow;
+    margin-left: 15%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .symbol{
+    position: fixed;
+    top: 40;
+    right: 60;
+  }
+
+  .symbol img{
+    width: 100%;
+    height: auto;
   }
 
 }
