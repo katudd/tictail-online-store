@@ -12,11 +12,15 @@ font-family: sans-serif;
   font-family: Raisonne;
   font-size: 1.3em;
   line-height: 2.3em;
-}
-
-#menu li{
   color:  #265852;
 }
+.links {
+  color:  #265852;
+}
+
+/*#menu li{
+  color:  #265852;
+}*/
 
 #menu :hover {
   color: #f0a773;
@@ -39,11 +43,6 @@ font-family: sans-serif;
 #menu input[type="checkbox"]:checked + .sub-menu {
   display: block;
 }
-
-nav a:hover {
-  color: green;
-}
-
 
 @media (max-width: 600px){
   /*start mobile hamburger */
@@ -148,7 +147,6 @@ nav a:hover {
   nav {
     width: 15%;
     height: 100%;
-    background-color: red;
     display: inline-block;
     position: fixed;
     top: 125px;
