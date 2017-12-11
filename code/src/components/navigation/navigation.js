@@ -23,7 +23,7 @@ class Navigation extends React.Component {
         <div className="mobile-menu-list">
 
           <ul>
-            <Link to="/home"><li>Home</li></Link>
+            <Link to="/"><li>Home</li></Link>
             <Link to="/products"><li><label className="drop-icon" htmlFor="sm">Products</label></li></Link>
             <input type="checkbox" id="sm" />
             <ul className="sub-menu">
