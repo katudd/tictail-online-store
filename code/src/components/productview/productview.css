@@ -73,16 +73,12 @@
 
 #name {
   font-family: Raisonne;
-  text-align: right;
+  text-align: center;
   z-index: 100;
   position: absolute;
-  right: 225px;
+  right: 190px;
   top: 200px;
   color: #265852;
-}
-
-#center {
-  text-align: center;
 }
 
 @media (max-width: 600px){
