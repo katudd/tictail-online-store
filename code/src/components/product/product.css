@@ -1,63 +1,4 @@
 .product-box {
-  width: 48%;
-  position: relative;
-  margin: 1%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
-}
-
-.image-product {
-  width: 100%;
-  padding-top: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.product-title, .product-price {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.product-box:hover .product-title {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 300ms ease-in;
-  background: white;
-  padding: 1vw;
-  border: 2px solid black;
-  text-align: center;
-  width: 50%;
-  height: 10%;
-  margin-top: 3%;
-  padding-bottom: 9%;
-  font-size: 1.5vw;
-}
-
-.product-box:hover .product-price{
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 300ms ease-in;
-  background: white;
-  border: 2px solid black;
-  text-align: center;
-  bottom:0;
-  width: 50%;
-  height: 10%;
-  padding-bottom: 9%;
-  padding-top: 3.5%;
-  margin-bottom: 3%;
-  font-size: 1.5vw;
-}
-
-@media (max-width: 600px){
-
-.product-box {
   width: 98%;
   position: relative;
   margin: 3%;
@@ -67,28 +8,88 @@
   align-content: space-between;
   }
 
+.image-product {
+  width: 100%;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 .product-title, .product-price {
   opacity: 1;
   visibility: visible;
-  transition: opacity 300ms ease-in;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.product-title {
   background: white;
   padding: 1vw;
   border: 2px solid black;
   text-align: center;
   width: 50%;
-  font-size: 1.5vw;
-  }
-
-.product-price{
-  bottom:0;
-  padding-top: 3.5%;
-  margin-bottom: 3%;
-  }
-  
-.product-title{
   height: 10%;
   margin-top: 3%;
+  padding-bottom: 9.5%;
+  padding-top: 3%;
+  font-size: 2.8vw;
+}
+
+.product-price {
+  background: white;
+  border: 2px solid black;
+  text-align: center;
+  bottom:0;
+  width: 50%;
+  height: 10%;
   padding-bottom: 9%;
+  padding-top: 3.5%;
+  margin-bottom: 3%;
+  font-size: 2.8vw;
+}
+
+
+@media (min-width: 600px){
+  .product-box {
+    width: 48%;
+    position: relative;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
   }
+
+  .product-title, .product-price {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .product-box:hover .product-title {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease-in;
+    width: 50%;
+    height: 10%;
+    margin-top: 3%;
+    padding-bottom: 9%;
+    font-size: 1.5vw;
+  }
+
+  .product-box:hover .product-price{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease-in;
+    width: 50%;
+    height: 10%;
+    padding-bottom: 9%;
+    padding-top: 3.5%;
+    margin-bottom: 3%;
+    font-size: 1.5vw;
+  }
+
+
 
 }
