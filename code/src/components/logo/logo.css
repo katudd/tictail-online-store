@@ -22,8 +22,8 @@ font-family: sans-serif;
     width: 80px;
     height: 30px;
     position: absolute;
-    top: 30;
-    left: 15;
+    top: 8px;
+    left: 15px;
   }
 
   .symbol{
@@ -37,7 +37,7 @@ font-family: sans-serif;
     width: 170px;
     height: auto;
     position: fixed;
-    top: 10;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -45,10 +45,10 @@ font-family: sans-serif;
   .symbol{
     width: auto;
     height: auto;
-    display: inline-block;
+    /*display: inline-block;*/
     position: fixed;
-    top: 30;
-    right: 0;
+    top: 30px;
+    left: 10px;
     background-color: pink;
   }
 
@@ -64,7 +64,7 @@ font-family: sans-serif;
     width: 320px;
     height: auto;
     position: fixed;
-    top: 30;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -72,8 +72,9 @@ font-family: sans-serif;
 
   .symbol{
     position: fixed;
-    top: 20;
-    right: 60;
+    top: 60px;
+    right: 40px;
+    z-index: 110;
   }
 
   .symbol img{
