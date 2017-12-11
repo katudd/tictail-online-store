@@ -41,7 +41,7 @@ class App extends React.Component {
 
           <div className="content">
             <Route path="/" exact component={Hero} />
-            <Route path="/home" component={Categorygrid} />
+            <Route path="/" component={Categorygrid} />
             <Route path="/products" component={Products} />
             <Route path="/product" component={Productview} />
           </div>
