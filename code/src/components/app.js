@@ -35,7 +35,7 @@ class App extends React.Component {
     return (
 
       <div>
-        <Navigation />
+        {/* <Navigation />
         <Logo />
 
         <div>
@@ -44,7 +44,7 @@ class App extends React.Component {
           <Categorygrid />
           <Products products={this.state.products}
             // filter={this.state.category}
-          />
+          /> */}
           <Productview product={this.state.products[0]} />
         </div>
         // </div>
