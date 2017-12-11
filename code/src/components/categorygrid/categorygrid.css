@@ -6,14 +6,24 @@
   margin-right: auto;
 }
 
+.categories-main {
+  display: flex;
+  justify-content: center;
+  width: 83.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .category {
   box-sizing: border-box;
   display: flex;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 33.5%;
   margin: -2% 1% 2% 1%;
+  color: black;
 }
 
 .imageCategory {
@@ -28,14 +38,15 @@
   display: inline-block;
   position: relative;
   font-family: Raisonne;
-  padding: 5px 0 5px 0;
   margin: 0;
-  background-color: #ffffffa8;
-  width: 100%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  top: 50%;
+  top: 75%;
+  background: white;
+  padding: 1vw;
+  border: 2px solid black;
 }
 
 @media (max-width: 600px){

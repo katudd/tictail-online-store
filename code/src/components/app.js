@@ -35,28 +35,33 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-    <div>
-      <Navigation />
-      <Logo />
+        <div>
+          <Navigation />
+          <Logo />
 
-      <div>
-        <Route path="/home" exact component={Hero} />
-        <Route path="/category" component={Categorygrid} />
-        <Route path="/products" component={Products} />
-        <Route path="/product" component={Productview} />
-    </div>
-        {/* <div>
-        <div className="content">
-          <Hero />
-          <Categorygrid />
-          <Products products={this.state.products}
-            // filter={this.state.category}
-          />
-          <Productview product={this.state.products[0]} />
+          <div className="content">
+            <Route path="/home" exact component={Hero} />
+            <Route path="/home" component={Categorygrid} />
+            <Route path="/products" component={Products} />
+            <Route path="/product" component={Productview} />
+          </div>
+          <div>
+            <div className="content">
+              {/* <Hero /> */}
+              {/* <Categorygrid /> */}
+              <div className="categories-main">
+                <Route path="/watches" component={Categorygrid} />
+                <Route path="/chairs" component={Categorygrid} />
+                <Route path="/art" component={Categorygrid} />
+              </div>
+              <Products products={this.state.products}
+              // filter={this.state.category}
+              />
+              <Productview product={this.state.products[0]} />
+            </div>
+          </div>
         </div>
-      </div> */}
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
     )
   }
 

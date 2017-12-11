@@ -20,7 +20,10 @@
   margin-left: auto;
   margin-right: auto;
   font-family: Raisonne;
+  font-size: 20px;
   border-radius: 0;
-  padding: 5px;
   background: white;
+  padding: 1vw;
+  border: 2px solid black;
+  top: 10%;
 }
