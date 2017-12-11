@@ -50,14 +50,14 @@
   font-size: 2vw;
 }
 
-.category a:hover {
-  color: #f0a773;
-}
-
 @media (max-width: 600px){
   .headingCategory  {
-    font-size: 1.2em;
-    width: 50%;
-    top: 65%;
+    font-size: 1em;
+    width: 70%;
+    top: 70%;
+  }
+
+  .categories {
+    width: 98%;
   }
 }

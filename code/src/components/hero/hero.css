@@ -29,18 +29,16 @@
   border: 2px solid black;
 }
 
-.herobutton a {
-  text-decoration: none;
-  color: black;
-}
-
-.herobutton a:hover {
-  color: #f0a773;
-}
-
 @media (max-width: 600px){
   .herobutton  {
-    font-size: 1.2em;
-    width: 40%;
+    font-size: 1em;
+    width: 22%;
   }
+
+  .herocontainer {
+    width: 96%;
+    margin-top: 2%;
+    margin-bottom: 0;
+  }
+
 }
