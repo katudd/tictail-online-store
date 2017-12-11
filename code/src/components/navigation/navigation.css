@@ -12,16 +12,11 @@ font-family: sans-serif;
   font-family: Raisonne;
   font-size: 1.3em;
   line-height: 2.3em;
-  color:  #265852;
 }
+
 .links {
   color:  #265852;
 }
-
-/*#menu li{
-  color:  #265852;
-}*/
-
 #menu :hover {
   color: #f0a773;
 }
