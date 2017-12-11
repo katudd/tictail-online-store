@@ -54,3 +54,41 @@
   margin-bottom: 3%;
   font-size: 1.5vw;
 }
+
+@media (max-width: 600px){
+
+.product-box {
+  width: 98%;
+  position: relative;
+  margin: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  }
+
+.product-title, .product-price {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease-in;
+  background: white;
+  padding: 1vw;
+  border: 2px solid black;
+  text-align: center;
+  width: 50%;
+  font-size: 1.5vw;
+  }
+
+.product-price{
+  bottom:0;
+  padding-top: 3.5%;
+  margin-bottom: 3%;
+  }
+  
+.product-title{
+  height: 10%;
+  margin-top: 3%;
+  padding-bottom: 9%;
+  }
+
+}
