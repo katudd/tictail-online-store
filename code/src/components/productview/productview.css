@@ -34,9 +34,9 @@
   padding-top: 60px;
   width: 100%;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid #265852;
   position: relative;
-  /*bottom: 5%;*/
+  color: #265852;
 }
 
 .buttondiv {
@@ -54,21 +54,21 @@
 }
 
 #button:hover {
-  background-color: #50ba83;
+  background-color: #4ca49e;
   border-radius: 50%;
   bottom: 0;
   right: 0;
-  border: 2px solid black;
 }
 
 #button {
   font-family: Raisonne;
-  background-color: #c693ac;
+  background-color: #f0a773;
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  border: 2px solid black;
+  border: 2px solid #265852;
   font-size: 20px;
+  color: #265852;
 }
 
 #name {
@@ -78,8 +78,72 @@
   position: absolute;
   right: 225px;
   top: 200px;
+  color: #265852;
 }
 
 #center {
   text-align: center;
+}
+
+@media (max-width: 600px){
+  .outerbox {
+    max-width: 400px;
+    width: 400px;
+    margin: auto;
+  }
+
+  .image {
+    margin: auto;
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+  }
+
+  .descriptioncontainer {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    top: 400px;
+    right: 0;
+  }
+
+  .description {
+    font-family: Raisonne;
+    padding: 30px;
+    padding-top: 60px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    position: relative;
+    /*bottom: 5%;*/
+  }
+
+  .buttondiv {
+    width: 300px;;
+    top: -10%;
+    left: 120px;
+    position: absolute;
+  }
+
+  .button {
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    top: 100px;
+  }
+
+}
+
+
+
+@media (min-width:601px) and (max-width:900px){
+
+}
+
+
+@media (min-width: 901px){
+
 }
