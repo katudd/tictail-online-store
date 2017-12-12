@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-.productviewpage {
-  width: 100%;
-}
-
-
 .outerbox {
   max-width: 600px;
   width: 600px;
@@ -32,7 +27,7 @@
 .descriptioncontainer {
   position: relative;
   margin: auto;
-  width: 350px;
+  width: 250px;
   top: -100px;
   left: 300px;
 }
@@ -40,7 +35,7 @@
 .description {
   font-family: Raisonne;
   padding: 30px;
-  padding-top: 60px;
+  padding-top: 50px;
   width: 100%;
   background-color: white;
   border: 2px solid #265852;
@@ -50,8 +45,8 @@
 
 .buttondiv {
   width: 30%;
-  top: -35%;
-  left: 125px;
+  top: -30%;
+  left: 75px;
   position: absolute;
 }
 
@@ -152,9 +147,9 @@
   .descriptioncontainer {
     position: relative;
     margin: auto;
-    width: 350px;
+    width: 250px;
     top: -100px;
-    left: 220px;
+    left: 150px;
   }
 
 
@@ -162,7 +157,7 @@
     margin-top: 30px;
     font-family: Raisonne;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 50px;
     width: 100%;
     background-color: white;
     border: 2px solid #265852;
@@ -173,8 +168,8 @@
 
   .buttondiv {
     width: 30%;
-    top: -35%;
-    left: 125px;
+    top: -30%;
+    left: 75px;
     position: absolute;
   }
 
