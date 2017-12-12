@@ -22,15 +22,14 @@ class Navigation extends React.Component {
 
             <ul>
               <li><Link to="/" className="links">Home</Link></li>
-              <li><Link to="/products" className="links"> <label className="drop-icon" htmlFor="sm">Products</label></Link></li>
-              <input type="checkbox" id="sm" />
-              <ul className="sub-menu">
-                <li><Link to="/klockor" className="links">Clocks</Link></li>
-                <li><Link to="/stolar" className="links">Chairs</Link></li>
-                <li><Link to="/tavlor" className="links">Art</Link></li>
-              </ul>
+              <li><Link to="/products" className="links">Products</Link></li>
+              {/* <ul className="sub-menu"> */}
+              <li><Link to="/klockor" className="links sub-menu">Clocks</Link></li>
+              <li><Link to="/stolar" className="links sub-menu">Chairs</Link></li>
+              <li><Link to="/tavlor" className="links sub-menu">Art</Link></li>
+              {/* </ul> */}
               <li><Link to="/about" className="links">About</Link></li>
-              <li><Link to="/newsletter" className="links">Newsletter</Link></li>
+              <li><Link to="/newsletter" className="links">Contact</Link></li>
             </ul>
 
           </div>
