@@ -10,8 +10,8 @@ font-family: sans-serif;
 
 #menu{
   font-family: Raisonne;
-  font-size: 1.3em;
-  line-height: 2.3em;
+  font-size: 1.5em;
+  line-height: 2em;
 }
 
 .links {
@@ -21,26 +21,12 @@ font-family: sans-serif;
   color: #f0a773;
 }
 
-#menu .submenu{
-  position: absolute;
-  z-index: 100;
-}
-
-#menu input[type="checkbox"]{
-  display: none;
-}
-
-
-#menu input[type="checkbox"] + .sub-menu {
-  display: none;
-}
-
-#menu input[type="checkbox"]:checked + .sub-menu {
-  display: block;
-}
-
 @media (max-width: 600px){
   /*start mobile hamburger */
+
+  .sub-menu{
+    font-size: 0.9em;
+  }
 
   .menu {
     width:100%;
@@ -113,7 +99,6 @@ font-family: sans-serif;
   nav {
     width: 18%;
     height: 100%;
-    background-color: red;
     display: inline-block;
     position: fixed;
     top:25px;
@@ -135,6 +120,10 @@ font-family: sans-serif;
   margin-left: -20px;
   }
 
+  .sub-menu {
+    padding-left: 15px;
+  }
+
 }
 
 @media (min-width: 901px){
@@ -150,6 +139,10 @@ font-family: sans-serif;
   #menu{
   font-size: 1.5em;
   line-height: 2em;
+  }
+
+  .sub-menu {
+    padding-left: 15px;
   }
 
 }

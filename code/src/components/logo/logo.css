@@ -79,7 +79,7 @@ font-family: sans-serif;
   .symbol{
     position: fixed;
     top: 60px;
-    right: 30px;
+    right: 40px;
     z-index: 10;
   }
 
