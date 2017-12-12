@@ -12,7 +12,7 @@ class Logo extends React.Component {
         </div>
 
         <div className="symbol">
-          <img src="https://cdn.shopify.com/s/files/1/0225/2573/t/15/assets/eggLogo.png?271592091679784299" alt="symbol for productcategory" />
+          <img src="./images/huslogogreen.png" alt="symbol for productcategory" />
         </div>
       </div>
 
