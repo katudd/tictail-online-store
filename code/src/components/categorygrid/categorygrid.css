@@ -4,6 +4,7 @@
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1%;
 }
 
 .categories-main {
@@ -52,7 +53,7 @@
 
 @media (max-width: 600px){
   .headingCategory  {
-    font-size: 1em;
+    font-size: 0.8em;
     width: 70%;
     top: 70%;
   }

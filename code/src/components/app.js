@@ -44,6 +44,10 @@ class App extends React.Component {
             <Route path="/" component={Categorygrid} />
             <Route path="/products" component={Products} />
             <Route path="/product" component={Productview} />
+            <Products products={this.state.products}
+            // filter={this.state.category}
+            />
+            {/* <Productview product={this.state.products[0]} /> */}
           </div>
           <div>
             <div className="content">
@@ -54,10 +58,6 @@ class App extends React.Component {
                 <Route path="/chairs" component={Categorygrid} />
                 <Route path="/art" component={Categorygrid} />
               </div>
-              <Products products={this.state.products}
-              // filter={this.state.category}
-              />
-              <Productview product={this.state.products[0]} />
             </div>
           </div>
         </div>
