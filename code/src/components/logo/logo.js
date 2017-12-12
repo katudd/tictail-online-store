@@ -12,7 +12,7 @@ class Logo extends React.Component {
         </div>
 
         <div className="symbol">
-          <img src="./images/huslogogreen.png" alt="symbol for productcategory" />
+          <img src="./images/housecirclethin.png" alt="symbol for productcategory" />
         </div>
       </div>
 
