@@ -9,22 +9,6 @@ import Hero from "./hero/hero"
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      products: []
-      // category: 'Watches'
-    }
-  }
-
-  componentDidMount() {
-    fetch("https://api.tictail.com/v1.26/stores/5znw/products").then(response =>
-      response.json()).then(json =>
-      this.setState({
-        products: json
-      }))
-  }
-
   // Method to update selectd category
   // setCategory(category) {
   //   this.setState({
@@ -38,33 +22,13 @@ class App extends React.Component {
         <div>
           <Navigation />
           <Logo />
-
           <div className="content">
             <Route path="/" exact component={Hero} />
             <Route path="/" component={Categorygrid} />
             <Route path="/products" component={Products} />
-            <Route path="/product" component={Productview} />
-            <Products products={this.state.products}
-            // filter={this.state.category}
-            />
-            <Productview product={this.state.products[0]} />
+            <Route path="/product/:productId" component={Productview} />
+          </div>
         </div>
-        {/* <div>
-          <div className="content">
-            <Hero />
-              <Categorygrid />
-              <div className="categories-main">
-                <Route path="/watches" component={Categorygrid} />
-                <Route path="/chairs" component={Categorygrid} />
-                <Route path="/art" component={Categorygrid} />
-              </div>
-              <Products products={this.state.products}
-              {filter={this.state.category}
-            />
-                <Productview product={this.state.products[0]} />
-        </div>
-           </div>  */}
-         </div>
       </BrowserRouter>
     )
   }
