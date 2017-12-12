@@ -48,13 +48,13 @@ font-family: sans-serif;
   }
 
   .symbol{
-    width: auto;
+    width: 130px;
     height: auto;
     display: inline-block;
     position: fixed;
     top: 30px;
     right: 0;
-    background-color: pink;
+    /*background-color: pink;*/
     z-index: 10;
   }
 
