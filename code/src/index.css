@@ -3,6 +3,11 @@
   src: url(/fonts/Raisonne_Demibold.otf);
 }
 
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
 body {
   font-family: Raisonne;
   margin: 0;

@@ -19,7 +19,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="App">
           <Navigation />
           <Logo />
           <div className="content">
