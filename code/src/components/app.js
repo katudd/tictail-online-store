@@ -24,7 +24,7 @@ class App extends React.Component {
           <Logo />
           <div className="content">
             <Route path="/" exact component={Hero} />
-            <Route path="/" component={Categorygrid} />
+            <Route path="/" exact component={Categorygrid} />
             <Route path="/products" component={Products} />
             <Route path="/product/:productId" component={Productview} />
           </div>
