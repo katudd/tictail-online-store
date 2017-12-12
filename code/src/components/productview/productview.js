@@ -23,6 +23,7 @@ class Productview extends React.Component {
       return null
     }
     return (
+      <div className="productviewpage">
       <div className="outerbox">
         <div id="name">
           <h1 id="nomargin">{this.state.product.title}</h1>
@@ -36,6 +37,7 @@ class Productview extends React.Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     )
   }

@@ -38,7 +38,7 @@ font-family: sans-serif;
 @media (min-width:601px) and (max-width:900px){
 
   .logo{
-    width: 170px;
+    width: 200px;
     height: auto;
     position: fixed;
     top: 10px;
@@ -48,7 +48,7 @@ font-family: sans-serif;
   }
 
   .symbol{
-    width: 130px;
+    width: 200px;
     height: auto;
     display: inline-block;
     position: fixed;
