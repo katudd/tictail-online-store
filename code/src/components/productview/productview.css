@@ -3,6 +3,9 @@
   src: url(/fonts/Raisonne_Demibold.otf);
 }
 
+*{
+  box-sizing: border-box;
+}
 
 .outerbox {
   max-width: 60%;
