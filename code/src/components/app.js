@@ -39,7 +39,7 @@ class App extends React.Component {
           <Navigation />
           <Logo />
 
-          {/* <div className="content">
+          <div className="content">
             <Route path="/" exact component={Hero} />
             <Route path="/" component={Categorygrid} />
             <Route path="/products" component={Products} />
@@ -47,24 +47,24 @@ class App extends React.Component {
             <Products products={this.state.products}
             // filter={this.state.category}
             />
-            {/* <Productview product={this.state.products[0]} /> */}
+            <Productview product={this.state.products[0]} />
         </div>
-        <div>
-          <div className="content"> */}
-            {/* <Hero /> */}
-              {/* <Categorygrid /> */}
+        {/* <div>
+          <div className="content">
+            <Hero />
+              <Categorygrid />
               <div className="categories-main">
                 <Route path="/watches" component={Categorygrid} />
                 <Route path="/chairs" component={Categorygrid} />
                 <Route path="/art" component={Categorygrid} />
               </div>
-              {/* <Products products={this.state.products} */}
-              {/* // filter={this.state.category}
-              /> */}
-              <Productview product={this.state.products[0]} />
-            </div>
-          </div>
-        {/* </div> */}
+              <Products products={this.state.products}
+              {filter={this.state.category}
+            />
+                <Productview product={this.state.products[0]} />
+        </div>
+           </div>  */}
+         </div>
       </BrowserRouter>
     )
   }
