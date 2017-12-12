@@ -8,8 +8,8 @@
 }
 
 .outerbox {
-  max-width: 60%;
-  width: 60%;
+  max-width: 600px;
+  width: 600px;
   height: auto;
   margin: auto;
   margin-bottom: 50px;
@@ -25,10 +25,11 @@
 }
 
 .descriptioncontainer {
-  position: absolute;
-  width: 300px;
-  top: 700px;
-  right: 135px;
+  position: relative;
+  margin: auto;
+  width: 350px;
+  top: -100px;
+  left: 300px;
 }
 
 .description {
@@ -45,7 +46,7 @@
 .buttondiv {
   width: 30%;
   top: -35%;
-  left: 100px;
+  left: 125px;
   position: absolute;
 }
 
@@ -78,9 +79,9 @@
   font-family: Raisonne;
   text-align: center;
   z-index: 100;
-  position: absolute;
-  right: 190px;
-  top: 550px;
+  position: relative;
+  left: 300px;
+  top: 400px;
   color: #265852;
 }
 
@@ -106,6 +107,7 @@
     width: 350px;
     top: 0;
     right:0;
+    left: 0;
   }
 
   .description {
@@ -130,14 +132,15 @@
   #name {
     position: relative;
     right: 0;
+    left: 0;
     top: 28px;
   }
 }
 
 @media (min-width:601px) and (max-width:900px){
   .outerbox {
-    max-width: 400px;
-    width: 400px;
+    max-width: 440px;
+    width: 440px;
     margin: auto;
   }
 
@@ -145,8 +148,8 @@
     position: relative;
     margin: auto;
     width: 350px;
-    top: 0;
-    right:0;
+    top: -100px;
+    left: 220px;
   }
 
 
@@ -160,6 +163,7 @@
     border: 2px solid #265852;
     position: relative;
     color: #265852;
+    margin-bottom: 20px;
   }
 
   .buttondiv {
@@ -171,8 +175,8 @@
 
   #name {
     position: relative;
-    right: 0;
-    top: 28px;
+    left: 225px;
+    top: 250px;
     margin-top: 50px;
   }
 }
