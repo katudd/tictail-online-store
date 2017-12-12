@@ -10,9 +10,10 @@
 
 
 .outerbox {
-  max-width: 60%;
-  width: 60%;
+  max-width: 800px;
+  width: 800px;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 .productimage {
@@ -27,8 +28,7 @@
 .descriptioncontainer {
   position: absolute;
   width: 300px;
-  height: 600px;
-  top: 400px;
+  top: 700px;
   right: 135px;
 }
 
@@ -45,7 +45,7 @@
 
 .buttondiv {
   width: 30%;
-  top: -10%;
+  top: -35%;
   left: 100px;
   position: absolute;
 }
@@ -72,7 +72,7 @@
   width: 100px;
   border: 2px solid #265852;
   font-size: 20px;
-  color: #265852;
+  color: white;
 }
 
 #name {
@@ -81,7 +81,7 @@
   z-index: 100;
   position: absolute;
   right: 190px;
-  top: 200px;
+  top: 550px;
   color: #265852;
 }
 
@@ -113,6 +113,7 @@
     right:0;
   }
 
+
   .description {
     margin-top: 30px;
     font-family: Raisonne;
@@ -127,15 +128,12 @@
 
   .buttondiv {
     width: 30%;
-    top: -10%;
+    top: -35%;
     left: 125px;
     position: absolute;
   }
 
   #name {
-    font-family: Raisonne;
-    text-align: center;
-    z-index: 100;
     position: relative;
     right: 0;
     top: 28px;
