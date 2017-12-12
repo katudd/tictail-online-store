@@ -25,8 +25,8 @@ class Productview extends React.Component {
     return (
       <div className="outerbox">
         <div id="name">
-          <h1>{this.state.product.title}</h1>
-          <h1>{accounting.formatMoney(this.state.product.price / 100, "sek ", "2", " ")}</h1>
+          <h1 id="nomargin">{this.state.product.title}</h1>
+          <p id="psize" >{accounting.formatMoney(this.state.product.price / 100, "sek ", "2", " ")}</p>
         </div>
         <div className="productimage" style={{ backgroundImage: `url(${this.state.product.images[0].url})` }} />
         <div className="descriptioncontainer">
