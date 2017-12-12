@@ -18,8 +18,8 @@ class Products extends React.Component {
         products: json
       }))
   }
+
   render() {
-    console.log(this.state.products)
     return (
       <div className="products">
         {this.state.products
