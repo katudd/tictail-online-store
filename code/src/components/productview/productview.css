@@ -29,7 +29,7 @@
   position: relative;
   margin: auto;
   width: 300px;
-  top: -150px;
+  top: -250px;
   left: 300px;
 }
 
@@ -46,8 +46,8 @@
 
 .buttondiv {
   width: 30%;
-  top: -30%;
-  left: 75px;
+  top: -20%;
+  left: 95px;
   position: absolute;
 }
 
@@ -76,6 +76,12 @@
   color: white;
 }
 
+.quantitybutton {
+  border: none;
+  padding: 0;
+  font-size: 30px;
+}
+
 #name {
   font-family: Raisonne;
   text-align: center;
@@ -83,8 +89,17 @@
   display: inline-block;
 }
 
+#nomargin {
+  margin: 0;
+}
+
 #psize {
   font-size: 20px;
+  margin: 0;
+}
+
+#margin {
+  margin-top: 20px;
 }
 
 @media (max-width: 600px){
@@ -126,6 +141,14 @@
     display: block;
     margin: 10px auto;
   }
+
+  .description {
+    display: none;
+  }
+
+  #mobiledescription {
+    display: block;
+  }
 }
 
 @media (min-width:601px) and (max-width:900px){
@@ -136,45 +159,56 @@
   }
 
   .descriptioncontainer {
-    position: relative;
-    margin: auto;
+    top: -200px;
     width: 250px;
-    top: -100px;
-    left: 150px;
+    left: 220px;
   }
 
 
   .description {
-    margin-top: 30px;
-    font-family: Raisonne;
-    padding: 30px;
-    padding-top: 50px;
-    width: 100%;
-    background-color: white;
-    border: 2px solid #265852;
-    position: relative;
-    color: #265852;
+    padding-top: 30px;
     margin-bottom: 20px;
   }
 
   .buttondiv {
     width: 30%;
-    top: -30%;
-    left: 75px;
+    top: -20%;
+    left: 80px;
     position: absolute;
   }
 
-  #name {
+  #name{
+    display: none;
+  }
 
+  #mobiledescription {
+    display: none;
+  }
+
+  #psize {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  #margin {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  #h1smallsize {
+    font-size: 25px;
   }
 }
 
 
+
 @media (min-width: 901px){
   #name {
-    z-index: 10;
-    position: absolute;
-    right: -25px;
-    top: 300px;
+    display: none;
+  }
+
+  #mobiledescription {
+    display: none;
   }
 }
