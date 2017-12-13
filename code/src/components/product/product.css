@@ -76,6 +76,7 @@
     margin-top: 3%;
     padding-bottom: 9%;
     font-size: 1.5vw;
+    color: black;
   }
 
   .product-box:hover .product-price{
@@ -88,6 +89,7 @@
     padding-top: 3.5%;
     margin-bottom: 3%;
     font-size: 1.5vw;
+    color: black;
   }
 
   .product-box:hover{
