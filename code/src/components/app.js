@@ -27,6 +27,7 @@ class App extends React.Component {
             <Route path="/" exact component={Categorygrid} />
             <Route path="/products" component={Products} />
             <Route path="/product/:productId" component={Productview} />
+            <Route path="/category/:categoryId" component={Products} />
           </div>
         </div>
       </BrowserRouter>

@@ -20,13 +20,25 @@ class Products extends React.Component {
   }
 
   render() {
+    console.log('this.state.products', this.state.products)
+    console.log('this.props', this.props)
+
+
+    // 1. Hitta kategorin
+    const categoryId = this.props.match.params.categoryId
+    console.log(categoryId)
+    // 2. Ta bort allt som ite har den kateogrin
+    // 3. Skriv ut alla produkter
     return (
       <div className="products">
         {this.state.products
           // This makes category filter work!
-          // .filter(product => {
-          //   return !this.props.filter || product.categories[0].title === this.props.filter
-          // })
+          .filter((product) => {
+            if (categoryId) {
+            return product.categories[0].slug === categoryId
+          } return true
+          })
+
           .map(item =>
             <Product
               key={item.id}

@@ -54,7 +54,7 @@ font-family: sans-serif;
     display: inline-block;
     position: fixed;
     top: 30px;
-    right: 0;
+    right: -10px;
     /*background-color: pink;*/
     z-index: 10;
   }
