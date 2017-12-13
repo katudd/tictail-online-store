@@ -134,7 +134,7 @@
   #name {
     position: relative;
     right: 0;
-    left: 0;
+    left: 135px;
     top: 28px;
   }
 }
@@ -177,7 +177,7 @@
 
   #name {
     position: relative;
-    left: 225px;
+    left: 90%;
     top: 250px;
     margin-top: 50px;
   }
