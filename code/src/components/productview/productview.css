@@ -13,6 +13,7 @@
   height: auto;
   margin: auto;
   margin-bottom: 50px;
+  position: relative;
 }
 
 .productimage {
@@ -27,7 +28,7 @@
 .descriptioncontainer {
   position: relative;
   margin: auto;
-  width: 250px;
+  width: 350px;
   top: -100px;
   left: 300px;
 }
@@ -79,10 +80,11 @@
   font-family: Raisonne;
   text-align: center;
   z-index: 100;
-  position: relative;
-  left: 300px;
-  top: 400px;
+  position: absolute;
+  right: -25px;
+  top: 300px;
   color: #265852;
+  display: inline-block;
 }
 
 #nomargin {
