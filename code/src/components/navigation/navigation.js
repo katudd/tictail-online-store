@@ -24,9 +24,9 @@ class Navigation extends React.Component {
               <li><Link to="/" className="links">Home</Link></li>
               <li><Link to="/products" className="links">Products</Link></li>
               {/* <ul className="sub-menu"> */}
-              <li><Link to="/klockor" className="links sub-menu">Clocks</Link></li>
-              <li><Link to="/stolar" className="links sub-menu">Chairs</Link></li>
-              <li><Link to="/tavlor" className="links sub-menu">Art</Link></li>
+              <li><Link to="/clocks" className="links sub-menu">Clocks</Link></li>
+              <li><Link to="/chairs" className="links sub-menu">Chairs</Link></li>
+              <li><Link to="/art" className="links sub-menu">Art</Link></li>
               {/* </ul> */}
               <li><Link to="/about" className="links">About</Link></li>
               <li><Link to="/newsletter" className="links">Contact</Link></li>
