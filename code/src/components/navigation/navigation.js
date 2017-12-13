@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import React from "react"
 import classnames from 'classnames'
-
+import {wrap} from 'tide'
 import "./navigation.css"
 
 class Navigation extends React.Component {
@@ -25,6 +25,10 @@ class Navigation extends React.Component {
     this.setState({
       displayMenu: false
     })
+  }
+
+  emptyCart() {
+    this.props.tide.actions.app.delete()
   }
 
   renderNavigation() {
@@ -57,7 +61,8 @@ class Navigation extends React.Component {
 
   render() {
     console.log('this.state', this.state.displayMenu)
-
+    console.log('cartQuantity', this.props.cartQuantity)
+    console.log('cartPrice', this.props.cartPrice)
     return (
 
       <nav id="menu">
@@ -90,6 +95,12 @@ class Navigation extends React.Component {
             "menu--isOpen": this.state.displayMenu
           })}>
             {this.renderNavigation()}
+
+            <div className="cart">
+              <div className="bag"><span className="bagcount">{this.props.cartQuantity}</span></div>
+              <div>total:{this.props.cartPrice}</div>
+              <button className="trash" onClick={this.emptyCart.bind(this)}></button>
+            </div>
           </div>
 
         </div>
@@ -99,4 +110,7 @@ class Navigation extends React.Component {
   }
 }
 
-export default Navigation
+export default wrap(Navigation, {
+  cartQuantity: 'cartQuantity',
+  cartPrice: 'cartPrice',
+})

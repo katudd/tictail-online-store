@@ -6,16 +6,9 @@ import Categorygrid from "./categorygrid/categorygrid"
 import Navigation from "./navigation/navigation"
 import Logo from "./logo/logo"
 import Hero from "./hero/hero"
+import {wrap} from 'tide'
 
 class App extends React.Component {
-
-  // Method to update selectd category
-  // setCategory(category) {
-  //   this.setState({
-  //     category
-  //   })
-  // }
-
   render() {
     return (
       <BrowserRouter>
@@ -36,4 +29,4 @@ class App extends React.Component {
 
 }
 
-export default App
+export default wrap(App)
