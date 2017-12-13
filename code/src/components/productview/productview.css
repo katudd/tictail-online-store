@@ -60,7 +60,7 @@
 }
 
 #button:hover {
-  background-color: #50ba83;
+  background-color: #4ca49e;
   border-radius: 50%;
   bottom: 0;
   right: 0;
@@ -80,7 +80,7 @@
 
 #button:focus {
   outline: 0;
-  box-shadow: 0 0 0 2pt #f0a773;
+  box-shadow: 0 0 0 1pt #f0a773;
 }
 
 .buttonqty {
