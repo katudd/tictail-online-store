@@ -22,7 +22,7 @@ font-family: sans-serif;
 }
 
 .cart {
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 .trash {
@@ -142,7 +142,7 @@ font-family: sans-serif;
   }
 
   .bag {
-    left: -25px;
+    left: -35px;
     margin-top: 14px;
     width: 34px;
     height: 34px;
@@ -157,7 +157,7 @@ font-family: sans-serif;
   }
 
   .trash {
-    left: -10px;
+    left: -15px;
     margin-top: 19px;
     width: 27px;
     height: 27px;
@@ -216,6 +216,10 @@ font-family: sans-serif;
     bottom: 10px;
     left: 22px;
     font-size: 20px;
+  }
+
+  .cart {
+    padding-left: 40px;
   }
 
 }
