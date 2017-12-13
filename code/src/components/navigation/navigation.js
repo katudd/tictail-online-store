@@ -71,7 +71,7 @@ class Navigation extends React.Component {
         <div className="mobile-menu">
 
           <input id="hamburger" onClick={this.toggleMenu.bind(this)} className="hamburger-checkbox" />
-          <Cart className="mobile-cart" horizontal/>
+          <Cart className="mobile-cart" horizontal />
           <label
             className={classnames('hamburger', {
               'hamburger--isOpen': this.state.displayMenu
@@ -96,7 +96,7 @@ class Navigation extends React.Component {
             "menu--isOpen": this.state.displayMenu
           })}>
             {this.renderNavigation()}
-            <Cart className="desktop-cart" displayPrice/>
+            <Cart className="desktop-cart" displayPrice />
           </div>
 
         </div>
