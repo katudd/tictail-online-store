@@ -60,6 +60,7 @@ font-family: sans-serif;
   padding-right: 5px;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 20px;
 }
 
 @media (max-width: 679px){
@@ -221,6 +222,10 @@ font-family: sans-serif;
 
   .cart {
     padding-left: 40px;
+  }
+
+  .pricecount {
+    font-size: 15px;
   }
 
 }
