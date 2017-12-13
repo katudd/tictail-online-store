@@ -16,7 +16,7 @@ class Cart extends React.Component {
         'cart--horizontal': this.props.horizontal
       })}>
         <div className="bag"><span className="bagcount">{this.props.cartQuantity}</span></div>
-        {this.props.displayPrice ? <div>{this.props.cartPrice} sek</div> : null }
+        {this.props.displayPrice ? <div className="pricecount">{this.props.cartPrice} sek</div> : null }
         <button className="trash" onClick={this.emptyCart.bind(this)}></button>
       </div>
     )
