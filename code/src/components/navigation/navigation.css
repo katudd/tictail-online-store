@@ -36,7 +36,7 @@ font-family: sans-serif;
     top: -100%;
     transition: all 0.5s ease-in-out;
     background-color: #fff;
-    z-index: 5;
+    z-index: 15;
   }
 
   .menu--isOpen {
@@ -127,7 +127,9 @@ font-family: sans-serif;
   }
 
   .sub-menu {
-    padding-left: 15px;
+    padding-left: 5px;
+    font-size: 0.9em;
+    line-height: 1.9em
   }
 
 }
@@ -148,7 +150,9 @@ font-family: sans-serif;
   }
 
   .sub-menu {
-    padding-left: 15px;
+    padding-left: 10px;
+    font-size: 0.9em;
+    line-height: 1.9em
   }
 
   .hamburger-checkbox {

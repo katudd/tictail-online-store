@@ -79,7 +79,7 @@
 #name {
   font-family: Raisonne;
   text-align: center;
-  z-index: 100;
+  z-index: 10;
   position: absolute;
   right: -25px;
   top: 300px;
