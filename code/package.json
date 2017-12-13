@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "accounting": "^0.4.1",
+    "classnames": "^2.2.5",
     "eslint-config-technigo": "^1.4.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

@@ -79,7 +79,7 @@
 #name {
   font-family: Raisonne;
   text-align: center;
-  z-index: 100;
+  z-index: 10;
   position: absolute;
   right: -25px;
   top: 300px;
@@ -134,7 +134,7 @@
   #name {
     position: relative;
     right: 0;
-    left: 0;
+    left: 135px;
     top: 28px;
   }
 }
@@ -177,7 +177,7 @@
 
   #name {
     position: relative;
-    left: 225px;
+    left: 90%;
     top: 250px;
     margin-top: 50px;
   }

@@ -36,12 +36,13 @@ font-family: sans-serif;
     top: -100%;
     transition: all 0.5s ease-in-out;
     background-color: #fff;
-    z-index: 5;
+    z-index: 15;
   }
 
-  .hamburger-checkbox:checked ~ .menu{
+  .menu--isOpen {
     top: 60px;
   }
+
 
   .hamburger-checkbox {
     display: none;
@@ -73,15 +74,15 @@ font-family: sans-serif;
     margin: 6px 0;
   }
 
-  .hamburger-checkbox:checked + .hamburger .bar1{
+  .hamburger--isOpen .bar1{
     transform: rotate(-45deg) translate(-8px, 6px);
   }
 
-  .hamburger-checkbox:checked + .hamburger .bar2{
+  .hamburger--isOpen .bar2{
   opacity: 0;
   }
 
-  .hamburger-checkbox:checked + .hamburger .bar3{
+  .hamburger--isOpen .bar3{
     transform: rotate(45deg) translate(-8px, -7px);
   }
 
@@ -126,7 +127,9 @@ font-family: sans-serif;
   }
 
   .sub-menu {
-    padding-left: 15px;
+    padding-left: 5px;
+    font-size: 0.9em;
+    line-height: 1.9em
   }
 
 }
@@ -147,7 +150,9 @@ font-family: sans-serif;
   }
 
   .sub-menu {
-    padding-left: 15px;
+    padding-left: 10px;
+    font-size: 0.9em;
+    line-height: 1.9em
   }
 
   .hamburger-checkbox {
