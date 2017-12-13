@@ -9,19 +9,31 @@ import Hero from "./hero/hero"
 
 class App extends React.Component {
 
-  // Method to update selectd category
-  // setCategory(category) {
-  //   this.setState({
-  //     category
-  //   })
-  // }
+  constructor() {
+    super();
+    this.state = {
+      className: 'logo-big'
+    }
+  }
+
+  handleScroll() {
+    if (document.documentElement.scrollTop > 20) {
+      this.setState({
+        className: 'logo-small'
+      })
+    }
+  }
+
+  componentDidMount() {
+    window.onscroll = () => this.handleScroll()
+  }
 
   render() {
     return (
       <BrowserRouter>
         <div className="App">
           <Navigation />
-          <Logo />
+          <Logo className={this.state.className} />
           <div className="content">
             <Route path="/" exact component={Hero} />
             <Route path="/" exact component={Categorygrid} />

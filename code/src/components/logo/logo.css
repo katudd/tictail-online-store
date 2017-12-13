@@ -11,6 +11,7 @@ font-family: sans-serif;
 .symbol {
   width: 150px;
 }
+
 /*
 .logo-container{
   width: 100%;
@@ -87,6 +88,14 @@ font-family: sans-serif;
   .symbol img{
     width: 100%;
     height: auto;
+  }
+
+  .logo-small {
+    transition:all .35s ease-in;
+    transform:scale(0.7);
+    transform-origin: top center;
+    transition-timing-function: initial;
+    transition-delay: initial;
   }
 
 }
