@@ -39,9 +39,10 @@ font-family: sans-serif;
     z-index: 5;
   }
 
-  .hamburger-checkbox:checked ~ .menu{
+  .menu--isOpen {
     top: 60px;
   }
+
 
   .hamburger-checkbox {
     display: none;
@@ -73,15 +74,15 @@ font-family: sans-serif;
     margin: 6px 0;
   }
 
-  .hamburger-checkbox:checked + .hamburger .bar1{
+  .hamburger--isOpen .bar1{
     transform: rotate(-45deg) translate(-8px, 6px);
   }
 
-  .hamburger-checkbox:checked + .hamburger .bar2{
+  .hamburger--isOpen .bar2{
   opacity: 0;
   }
 
-  .hamburger-checkbox:checked + .hamburger .bar3{
+  .hamburger--isOpen .bar3{
     transform: rotate(45deg) translate(-8px, -7px);
   }
 

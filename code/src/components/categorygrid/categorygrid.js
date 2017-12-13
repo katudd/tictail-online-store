@@ -4,6 +4,7 @@ import "./categorygrid.css"
 
 class Categorygrid extends React.Component {
   render() {
+
     return (
       <div className="categories">
         <Link className="category" to="/watches">
