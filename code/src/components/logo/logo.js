@@ -3,12 +3,25 @@ import "./logo.css"
 
 import logo from "../../images/homebound_logo_green.svg"
 import house from "../../images/houseorange.png"
-
+import art from "../../images/houselogo.png"
+import chairs from "../../images/huslogogreen.png"
+import clocks from "../../images/housecircle.png"
+import PropTypes from 'prop-types';
 
 class Logo extends React.Component {
 
 
   render() {
+    let logoImage
+    if (this.context.router.route.location.pathname.endsWith("/art")){
+      logoImage = art
+    } else if (this.context.router.route.location.pathname.endsWith("/chairs")){
+      logoImage = chairs
+    } else if (this.context.router.route.location.pathname.endsWith("/clocks")){
+      logoImage = clocks
+    } else {
+      logoImage = house
+    }
     return (
 
       <div className="logo-container">
@@ -17,7 +30,7 @@ class Logo extends React.Component {
         </div>
 
         <div className="symbol">
-          <img src={house} alt="symbol for productcategory" />
+          <img src={logoImage} alt="symbol for productcategory" />
         </div>
       </div>
 
@@ -25,5 +38,8 @@ class Logo extends React.Component {
   }
 }
 
+Logo.contextTypes = {
+  router: PropTypes.object.isRequired
+}
 
 export default Logo

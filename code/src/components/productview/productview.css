@@ -118,7 +118,7 @@
   margin-top: 20px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 679px){
   .outerbox {
     max-width: 400px;
     width: 400px;
@@ -172,7 +172,7 @@
   }
 }
 
-@media (min-width:601px) and (max-width:900px){
+@media (min-width:680px) and (max-width:900px){
   .outerbox {
     max-width: 440px;
     width: 440px;
