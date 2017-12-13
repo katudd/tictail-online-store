@@ -30,7 +30,7 @@
   border: 2px solid black;
 }
 
-@media (max-width: 600px){
+@media (max-width: 679px){
   .herobutton  {
     font-size: 0.8em;
     width: 22%;
