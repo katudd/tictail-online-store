@@ -3,9 +3,9 @@ import "./logo.css"
 
 import logo from "../../images/homebound_logo_green.svg"
 import house from "../../images/houseorange.png"
-import art from "../../images/houselogo.png"
-import chairs from "../../images/huslogogreen.png"
-import clocks from "../../images/housecircle.png"
+import art from "../../images/art.png"
+import chairs from "../../images/chair_1.png"
+import clocks from "../../images/watch.png"
 import PropTypes from 'prop-types';
 
 class Logo extends React.Component {
