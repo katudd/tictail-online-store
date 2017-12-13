@@ -6,6 +6,7 @@ import house from "../../images/houseorange.png"
 import art from "../../images/art.png"
 import chairs from "../../images/chair_1.png"
 import clocks from "../../images/watch.png"
+import products from "../../images/products_1.png"
 import PropTypes from 'prop-types';
 
 class Logo extends React.Component {
@@ -19,6 +20,8 @@ class Logo extends React.Component {
       logoImage = chairs
     } else if (this.context.router.route.location.pathname.endsWith("/clocks")){
       logoImage = clocks
+    } else if (this.context.router.route.location.pathname.endsWith("/products")){
+      logoImage = products
     } else {
       logoImage = house
     }
