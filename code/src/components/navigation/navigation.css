@@ -159,13 +159,13 @@ font-family: sans-serif;
   #menu{
   font-size: 1em;
   line-height: 2em;
-  margin-left: -20px;
+  /*margin-left: -20px;*/
   }
 
   .sub-menu {
-    padding-left: 5px;
+    padding-left: 7px;
     font-size: 0.9em;
-    line-height: 1.9em
+    line-height: 1.7em
   }
 
 }
@@ -188,7 +188,7 @@ font-family: sans-serif;
   .sub-menu {
     padding-left: 10px;
     font-size: 0.9em;
-    line-height: 1.9em
+    line-height: 1.7em
   }
 
   .hamburger-checkbox {

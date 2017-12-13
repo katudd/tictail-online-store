@@ -35,6 +35,14 @@
   background-repeat: no-repeat;
 }
 
+  .category:hover {
+  opacity: 1;
+  transition:all .3s ease-in-out;
+  -webkit-transform:scale(1.03);
+  -moz-transform:scale(1.03);
+  transform:scale(1.03);
+}
+
 .headingCategory {
   display: inline-block;
   position: relative;

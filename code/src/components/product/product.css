@@ -90,6 +90,14 @@
     font-size: 1.5vw;
   }
 
+  .product-box:hover{
+    opacity: 1;
+    transition:all .3s ease-in-out;
+    -webkit-transform:scale(1.03);
+    -moz-transform:scale(1.03);
+    transform:scale(1.03);
+  }
+
 
 
 }
