@@ -66,7 +66,7 @@ class Productview extends React.Component {
           <div className="description" id="mobiledescription">{this.state.product.description}</div>
 
           <div className="description">
-            <div>
+            <div className="button">
               <button className="quantitybutton" type="button" onClick={this.reduceItemCount.bind(this)}> - </button>
               <span> {this.state.itemCount} </span>
               <button className="quantitybutton" type="button" onClick={this.addItemCount.bind(this)}> + </button>

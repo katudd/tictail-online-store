@@ -3,6 +3,7 @@ import React from "react"
 import classnames from 'classnames'
 import {wrap} from 'tide'
 import "./navigation.css"
+import Cart from "../cart/cart.js"
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -70,7 +71,7 @@ class Navigation extends React.Component {
         <div className="mobile-menu">
 
           <input id="hamburger" onClick={this.toggleMenu.bind(this)} className="hamburger-checkbox" />
-
+          <Cart className="mobile-cart" horizontal/>
           <label
             className={classnames('hamburger', {
               'hamburger--isOpen': this.state.displayMenu
@@ -95,12 +96,7 @@ class Navigation extends React.Component {
             "menu--isOpen": this.state.displayMenu
           })}>
             {this.renderNavigation()}
-
-            <div className="cart">
-              <div className="bag"><span className="bagcount">{this.props.cartQuantity}</span></div>
-              <div>total:{this.props.cartPrice}</div>
-              <button className="trash" onClick={this.emptyCart.bind(this)}></button>
-            </div>
+            <Cart className="desktop-cart" displayPrice/>
           </div>
 
         </div>

@@ -75,6 +75,14 @@ font-family: sans-serif;
     z-index: 15;
   }
 
+  .mobile-cart {
+    display: block;
+  }
+
+  .desktop-cart {
+    display: none;
+  }
+
   .menu--isOpen {
     top: 60px;
   }
@@ -168,6 +176,13 @@ font-family: sans-serif;
     line-height: 1.7em
   }
 
+  .mobile-cart {
+    display: none !important;
+  }
+
+  .desktop-cart {
+    display: block !important;
+  }
 }
 
 @media (min-width: 901px){
@@ -193,6 +208,14 @@ font-family: sans-serif;
 
   .hamburger-checkbox {
     display: none;
+  }
+
+  .mobile-cart {
+    display: none !important;
+  }
+
+  .desktop-cart {
+    display: block !important;
   }
 
 }
