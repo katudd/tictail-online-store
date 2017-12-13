@@ -63,12 +63,19 @@ class Productview extends React.Component {
         <div className="productimage" style={{ backgroundImage: `url(${this.state.product.images[0].url})` }} />
         <div className="descriptioncontainer">
 
-          <div className="description" id="mobiledescription">{this.state.product.description}</div>
+          <div className="description" id="mobiledescription">
+            <div className="buttonqty">
+              <button className="quantitybutton" type="button" onClick={this.reduceItemCount.bind(this)}> - </button>
+              <span className="quantitybutton"> {this.state.itemCount} </span>
+              <button className="quantitybutton" type="button" onClick={this.addItemCount.bind(this)}> + </button>
+            </div>
+            {this.state.product.description}
+          </div>
 
           <div className="description">
-            <div className="button">
+            <div className="buttonqty">
               <button className="quantitybutton" type="button" onClick={this.reduceItemCount.bind(this)}> - </button>
-              <span> {this.state.itemCount} </span>
+              <span className="numberbutton"> {this.state.itemCount} </span>
               <button className="quantitybutton" type="button" onClick={this.addItemCount.bind(this)}> + </button>
             </div>
             <h1 id="h1smallsize">{this.state.product.title}</h1>
