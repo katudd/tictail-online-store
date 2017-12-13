@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 .outerbox {
   max-width: 600px;
   width: 600px;
@@ -59,7 +60,7 @@
 }
 
 #button:hover {
-  background-color: #4ca49e;
+  background-color: #50ba83;
   border-radius: 50%;
   bottom: 0;
   right: 0;
@@ -75,6 +76,11 @@
   font-size: 20px;
   color: white;
   cursor: pointer;
+}
+
+#button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2pt #f0a773;
 }
 
 .buttonqty {
