@@ -36,7 +36,7 @@ class Products extends React.Component {
 
     return (
       <div className="products">
-        {this.state.categories
+        {/* {this.state.categories
           .filter((category) => {
             if (categoryId) {
               return category.categories[0].slug === categoryId
@@ -51,7 +51,7 @@ class Products extends React.Component {
                 productcount={item.product_count}> {item.product_count} products
               </div>
             )
-          })}
+          })} */}
 
         {this.state.products
           // This makes category filter work!

@@ -10,8 +10,6 @@ import {wrap} from 'tide'
 
 class App extends React.Component {
 
-<<<<<<< HEAD
-=======
   constructor() {
     super();
     this.state = {
@@ -31,7 +29,6 @@ class App extends React.Component {
     window.onscroll = () => this.handleScroll()
   }
 
->>>>>>> d048120024223d12e114b416a79b43b8ed52e317
   render() {
     return (
       <BrowserRouter>
