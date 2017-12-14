@@ -1,0 +1,4 @@
+.cart--horizontal {
+  display: flex;
+  z-index: 20;
+}

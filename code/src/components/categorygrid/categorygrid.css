@@ -59,7 +59,7 @@
   font-size: 2vw;
 }
 
-@media (max-width: 600px){
+@media (max-width: 679px){
   .headingCategory  {
     font-size: 0.8em;
     width: 70%;

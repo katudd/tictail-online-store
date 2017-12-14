@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
 import React from "react"
 import classnames from 'classnames'
-
+import {wrap} from 'tide'
 import "./navigation.css"
+import Cart from "../cart/cart.js"
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -25,6 +26,10 @@ class Navigation extends React.Component {
     this.setState({
       displayMenu: false
     })
+  }
+
+  emptyCart() {
+    this.props.tide.actions.app.delete()
   }
 
   renderNavigation() {
@@ -57,7 +62,8 @@ class Navigation extends React.Component {
 
   render() {
     console.log('this.state', this.state.displayMenu)
-
+    console.log('cartQuantity', this.props.cartQuantity)
+    console.log('cartPrice', this.props.cartPrice)
     return (
 
       <nav id="menu">
@@ -65,7 +71,7 @@ class Navigation extends React.Component {
         <div className="mobile-menu">
 
           <input id="hamburger" onClick={this.toggleMenu.bind(this)} className="hamburger-checkbox" />
-
+          <Cart className="mobile-cart" horizontal />
           <label
             className={classnames('hamburger', {
               'hamburger--isOpen': this.state.displayMenu
@@ -90,6 +96,7 @@ class Navigation extends React.Component {
             "menu--isOpen": this.state.displayMenu
           })}>
             {this.renderNavigation()}
+            <Cart className="desktop-cart" displayPrice />
           </div>
 
         </div>
@@ -99,4 +106,7 @@ class Navigation extends React.Component {
   }
 }
 
-export default Navigation
+export default wrap(Navigation, {
+  cartQuantity: 'cartQuantity',
+  cartPrice: 'cartPrice',
+})

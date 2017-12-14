@@ -7,6 +7,10 @@
   position: relative;
 }
 
+:focus {
+outline-color: #f0a773;
+}
+
 body {
   font-family: Raisonne;
   margin: 0;

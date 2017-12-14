@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 .outerbox {
   max-width: 600px;
   width: 600px;
@@ -29,7 +30,7 @@
   position: relative;
   margin: auto;
   width: 300px;
-  top: -150px;
+  top: -250px;
   left: 300px;
 }
 
@@ -46,8 +47,8 @@
 
 .buttondiv {
   width: 30%;
-  top: -30%;
-  left: 75px;
+  top: -16%;
+  left: 95px;
   position: absolute;
 }
 
@@ -74,7 +75,34 @@
   border: 2px solid #265852;
   font-size: 20px;
   color: white;
+  cursor: pointer;
 }
+
+#button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 1pt #f0a773;
+}
+
+.buttonqty {
+  text-align: center;
+  margin: auto;
+}
+
+.quantitybutton {
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.numberbutton {
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 35px;
+}
+
 
 #name {
   font-family: Raisonne;
@@ -83,11 +111,20 @@
   display: inline-block;
 }
 
-#psize {
-  font-size: 20px;
+#nomargin {
+  margin: 0;
 }
 
-@media (max-width: 600px){
+#psize {
+  font-size: 20px;
+  margin: 0;
+}
+
+#margin {
+  margin-top: 20px;
+}
+
+@media (max-width: 679px){
   .outerbox {
     max-width: 400px;
     width: 400px;
@@ -107,7 +144,7 @@
     margin-top: 30px;
     font-family: Raisonne;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 40px;
     width: 100%;
     background-color: white;
     border: 2px solid #265852;
@@ -117,7 +154,7 @@
 
   .buttondiv {
     width: 30%;
-    top: -35%;
+    top: -25%;
     left: 125px;
     position: absolute;
   }
@@ -126,9 +163,22 @@
     display: block;
     margin: 10px auto;
   }
+
+  .description {
+    display: none;
+  }
+
+  #mobiledescription {
+    display: block;
+  }
+
+  .quantitybutton {
+    padding: 20px;
+    font-size: 25px;
+  }
 }
 
-@media (min-width:601px) and (max-width:900px){
+@media (min-width:680px) and (max-width:900px){
   .outerbox {
     max-width: 440px;
     width: 440px;
@@ -136,45 +186,66 @@
   }
 
   .descriptioncontainer {
-    position: relative;
-    margin: auto;
+    top: -200px;
     width: 250px;
-    top: -100px;
-    left: 150px;
+    left: 220px;
   }
 
 
   .description {
-    margin-top: 30px;
-    font-family: Raisonne;
-    padding: 30px;
-    padding-top: 50px;
-    width: 100%;
-    background-color: white;
-    border: 2px solid #265852;
-    position: relative;
-    color: #265852;
+    padding-top: 30px;
     margin-bottom: 20px;
   }
 
   .buttondiv {
     width: 30%;
-    top: -30%;
     left: 75px;
     position: absolute;
   }
 
-  #name {
-
+  #name{
+    display: none;
   }
+
+  #mobiledescription {
+    display: none;
+  }
+
+  #psize {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  #margin {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  #h1smallsize {
+    font-size: 25px;
+  }
+
+  .quantitybutton {
+    padding-top: 25px;
+    font-size: 25px;
+  }
+
+  .numberbutton {
+    padding-top: 25px;
+    font-size: 25px;
+  }
+
 }
+
 
 
 @media (min-width: 901px){
   #name {
-    z-index: 10;
-    position: absolute;
-    right: -25px;
-    top: 300px;
+    display: none;
+  }
+
+  #mobiledescription {
+    display: none;
   }
 }

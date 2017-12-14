@@ -6,15 +6,38 @@ import Categorygrid from "./categorygrid/categorygrid"
 import Navigation from "./navigation/navigation"
 import Logo from "./logo/logo"
 import Hero from "./hero/hero"
+import {wrap} from 'tide'
 
 class App extends React.Component {
 
+<<<<<<< HEAD
+=======
+  constructor() {
+    super();
+    this.state = {
+      className: 'logo-big'
+    }
+  }
+
+  handleScroll() {
+    if (document.documentElement.scrollTop > 20) {
+      this.setState({
+        className: 'logo-small'
+      })
+    }
+  }
+
+  componentDidMount() {
+    window.onscroll = () => this.handleScroll()
+  }
+
+>>>>>>> d048120024223d12e114b416a79b43b8ed52e317
   render() {
     return (
       <BrowserRouter>
         <div className="App">
           <Navigation />
-          <Logo />
+          <Logo className={this.state.className} />
           <div className="content">
             <Route path="/" exact component={Hero} />
             <Route path="/" exact component={Categorygrid} />
@@ -29,4 +52,4 @@ class App extends React.Component {
 
 }
 
-export default App
+export default wrap(App)
