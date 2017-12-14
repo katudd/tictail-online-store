@@ -9,13 +9,6 @@ import Hero from "./hero/hero"
 
 class App extends React.Component {
 
-  // Method to update selectd category
-  // setCategory(category) {
-  //   this.setState({
-  //     category
-  //   })
-  // }
-
   render() {
     return (
       <BrowserRouter>

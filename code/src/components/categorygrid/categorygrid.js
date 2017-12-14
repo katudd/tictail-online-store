@@ -17,25 +17,21 @@ class Categorygrid extends React.Component {
       this.setState({
         categories: json
       }))
-      fetch("https://api.tictail.com/v1.26/stores/5znw/products").then(response =>
-        response.json()).then(json =>
-        this.setState({
-          products: json
-        }))
+    fetch("https://api.tictail.com/v1.26/stores/5znw/products").then(response =>
+      response.json()).then(json =>
+      this.setState({
+        products: json
+      }))
   }
 
   getCategoryImage(categoryId) {
-    console.log('category', categoryId)
-    console.log('this.state.products', this.state.products)
-
     const categoryProducts = this.state.products.filter((product) => {
       return product.images.length !== 0 && product.categories[0].id === categoryId
     })
-    console.log('categoryProducts', categoryProducts)
-
+  console.log("categoryId", categoryId)
     const selectedProduct = categoryProducts[0]
 
-    console.log(selectedProduct)
+    console.log("selectedProduct", selectedProduct)
 
     const productImage = selectedProduct ? selectedProduct.images[0].url : "./images/dandelion09_akihiro_yoshida.jpg"
     return { backgroundImage: `url(${productImage})` }
@@ -58,7 +54,6 @@ class Categorygrid extends React.Component {
       </div>
     )
   }
-
 
   render() {
     return this.renderCategories()

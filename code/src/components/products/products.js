@@ -6,8 +6,8 @@ class Products extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      products: []
-      // category: 'Watches'
+      products: [],
+      categories: []
     }
   }
 
@@ -17,26 +17,48 @@ class Products extends React.Component {
       this.setState({
         products: json
       }))
+    fetch("https://api.tictail.com/v1.26/stores/5znw/categories").then(response =>
+      response.json()).then(json =>
+      this.setState({
+        categories: json
+      }))
   }
 
   render() {
-    console.log('this.state.products', this.state.products)
-    console.log('this.props', this.props)
-
+    console.log("this.state.products", this.state.products)
+    console.log("this.props", this.props)
 
     // 1. Hitta kategorin
     const categoryId = this.props.match.params.categoryId
-    console.log(categoryId)
-    // 2. Ta bort allt som ite har den kateogrin
+    console.log("categoryId", categoryId)
+    // 2. Ta bort allt som inte har den kateogrin
     // 3. Skriv ut alla produkter
+
     return (
       <div className="products">
+        {this.state.categories
+          .filter((category) => {
+            if (categoryId) {
+              return category.categories[0].slug === categoryId
+            } return true
+          })
+
+          .map((item) => {
+            return (
+              <div
+                className="numberOfProducts"
+                key={item.id}
+                productcount={item.product_count}> {item.product_count} products
+              </div>
+            )
+          })}
+
         {this.state.products
           // This makes category filter work!
           .filter((product) => {
             if (categoryId) {
-            return product.categories[0].slug === categoryId
-          } return true
+              return product.categories[0].slug === categoryId
+            } return true
           })
 
           .map(item =>
@@ -49,6 +71,7 @@ class Products extends React.Component {
               price={item.price}
               category={item.categories.title} />)}
       </div>
+
     )
   }
 }

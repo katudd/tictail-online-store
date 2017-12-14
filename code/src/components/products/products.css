@@ -12,3 +12,19 @@ body {
   justify-content: flex-start;
   margin-top: 1%;
 }
+
+.numberOfProducts {
+position: absolute;
+color: #f0a773;
+top: -10px;
+padding-left: 0.7%;
+font-size: 1.6vw;
+}
+
+@media (max-width: 600px){
+  .numberOfProducts {
+  top: 74px;
+  left: 10px;
+  font-size: 2vw;
+  }
+}
