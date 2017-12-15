@@ -10,7 +10,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 1%;
+  /*margin-top: 1%;*/
 }
 
 .numberOfProducts {
