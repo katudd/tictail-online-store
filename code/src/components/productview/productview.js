@@ -1,8 +1,7 @@
 import React from "react"
 import accounting from "accounting"
+import { wrap } from "tide"
 import "./productview.css"
-
-import { wrap } from 'tide'
 
 class Productview extends React.Component {
   constructor(props) {
@@ -14,7 +13,7 @@ class Productview extends React.Component {
   }
 
   componentDidMount() {
-    console.log('this.proos', this.props);
+    console.log("this.proos", this.props)
     fetch(`https://api.tictail.com/v1.26/stores/5znw/products/${this.props.match.params.productId}`).then(response =>
       response.json()).then(json =>
       this.setState({
@@ -35,7 +34,6 @@ class Productview extends React.Component {
   }
 
   addItemCount() {
-
     const currentCount = this.state.itemCount
 
     this.setState({

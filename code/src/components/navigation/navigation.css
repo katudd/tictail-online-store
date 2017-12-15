@@ -39,7 +39,6 @@ font-family: sans-serif;
 }
 
 .bagcount {
-  opacity: 0.8;
   position: absolute;
   bottom: 10px;
   left: 20px;
@@ -96,7 +95,6 @@ font-family: sans-serif;
   .menu--isOpen {
     top: 60px;
   }
-
 
   .hamburger-checkbox {
     display: none;
@@ -168,10 +166,10 @@ font-family: sans-serif;
     width: 28px;
     height: 28px;
   }
-
-  /*end mobile hamburger*/
-
 }
+
+/*end mobile hamburger*/
+
 
 @media (min-width:680px) and (max-width:900px){
 
@@ -183,7 +181,7 @@ font-family: sans-serif;
     top:25px;
   }
 
-  .container{
+  .container {
     width: 79%;
     height: 2000px;
     background-color: yellow;
@@ -197,10 +195,9 @@ font-family: sans-serif;
     display: none;
   }
 
-  #menu{
-  font-size: 1em;
-  line-height: 2em;
-  /*margin-left: -20px;*/
+  #menu {
+    font-size: 1em;
+    line-height: 2em;
   }
 
   .sub-menu {
@@ -217,7 +214,6 @@ font-family: sans-serif;
     display: block !important;
   }
 
-
   .bagcount {
     bottom: 10px;
     left: 22px;
@@ -231,7 +227,6 @@ font-family: sans-serif;
   .pricecount {
     font-size: 15px;
   }
-
 }
 
 @media (min-width: 901px){
@@ -243,9 +238,9 @@ font-family: sans-serif;
     top: 125px;
   }
 
-  #menu{
-  font-size: 1.5em;
-  line-height: 2em;
+  #menu {
+    font-size: 1.5em;
+    line-height: 2em;
   }
 
   .sub-menu {
@@ -265,5 +260,4 @@ font-family: sans-serif;
   .desktop-cart {
     display: block !important;
   }
-
 }
