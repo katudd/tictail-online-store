@@ -6,8 +6,7 @@ class Products extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      products: [],
-      categories: []
+      products: []
     }
   }
 
@@ -16,11 +15,6 @@ class Products extends React.Component {
       response.json()).then(json =>
       this.setState({
         products: json
-      }))
-    fetch("https://api.tictail.com/v1.26/stores/5znw/categories").then(response =>
-      response.json()).then(json =>
-      this.setState({
-        categories: json
       }))
   }
 
@@ -36,22 +30,6 @@ class Products extends React.Component {
 
     return (
       <div className="products">
-        {/* {this.state.categories
-          .filter((category) => {
-            if (categoryId) {
-              return category.categories[0].slug === categoryId
-            } return true
-          })
-
-          .map((item) => {
-            return (
-              <div
-                className="numberOfProducts"
-                key={item.id}
-                productcount={item.product_count}> {item.product_count} products
-              </div>
-            )
-          })} */}
 
         {this.state.products
           // This makes category filter work!
