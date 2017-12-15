@@ -47,6 +47,7 @@ class Products extends React.Component {
               image={item.images[0].url}
               description={item.description}
               price={item.price}
+              currency={item.currency}
               category={item.categories.title} />)}
       </div>
 
